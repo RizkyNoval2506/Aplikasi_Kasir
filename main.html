@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kasir</title>
+</head>
+
+<body>
+    <h1>Aplikasi Kasir</h1>
+    <table>
+        <tr>
+            <td><label for="">Jenis Produk</label></td>
+            <td><select onclick="execute()" name ="" id = "pilih-produk">
+                <option value="sabun-batang">Sabun Batang</option>
+                <option value="mie-instan">Mie Instan</option>
+                <option value="pensil">Pensil</option>
+                <option value="kopi-sachet">Kopi Sachet</option>
+                <option value="air-galon">Air Galon</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td><label for="#">Total Produk</label></td>
+            <td><input type="number" name="#" id="total-produk"></td>
+        </tr>
+    </table>
+
+    <h1>===Print Total===</h1>
+    <table>
+        <tr>
+            <td><label for="">Harga Produk</label></td>
+            <td><input type="number" id="harga-produk" disabled=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Total Harga</label></td>
+            <td><input type="number" id="total-harga" disabled=""></td>
+        </tr>
+    </table>
+
+    <button onclick="process()">Process</button>
+    <button onclick="reset()">Reset</button>
+
+
+</body>
+
+</html>
